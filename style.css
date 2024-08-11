@@ -1,0 +1,29 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+  transform: translateY(300px);
+  overflow: hidden;
+}
+.black-hole{
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  transform-style: preserve-3d;
+  transform: rotate3d(1, 0, 0, 60deg);
+}
+
+.ring-circle{
+  width: var(--radius);
+  border-radius: 50%;
+  aspect-ratio: 1;
+  border: var(--borderradius) solid rgb(147, 153, 160);
+  position: absolute;
+  transform: translateZ(var(--height));
+  /* background-color: white; */
+  /* box-shadow: inset 0px 0px 1px 1px rgb(0, 0, 0); */
+}
+
