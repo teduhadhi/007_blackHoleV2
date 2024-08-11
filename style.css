@@ -4,8 +4,9 @@
   box-sizing: border-box;
 }
 body{
-  transform: translateY(300px);
+  transform: translateY(200px);
   overflow: hidden;
+  background-color: #222;
 }
 .black-hole{
   height: 100vh;
@@ -14,16 +15,31 @@ body{
   place-items: center;
   transform-style: preserve-3d;
   transform: rotate3d(1, 0, 0, 60deg);
+  /* overflow: hidden; */
 }
 
-.ring-circle{
+.ring-circle-1{
   width: var(--radius);
   border-radius: 50%;
   aspect-ratio: 1;
-  border: var(--borderradius) solid rgb(147, 153, 160);
+  border: var(--borderradius) solid rgba(255, 255, 255, 0.568);
   position: absolute;
   transform: translateZ(var(--height));
   /* background-color: white; */
+  /* box-shadow: inset 0px 0px var(--shadow) rgba(255, 255, 255, 0.568); */
+}
+
+.ring-circle-2{
+  width: var(--radius);
+  border-radius: 50%;
+  aspect-ratio: 1;
+  /* border: var(--borderradius) solid rgba(255, 255, 255, 0.568); */
+  position: absolute;
+  transform: translateZ(var(--height));
+  box-shadow: inset 0px 0px var(--shadow) rgba(255, 255, 255, 0.568);
+
+  /* background-color: white; */
   /* box-shadow: inset 0px 0px 1px 1px rgb(0, 0, 0); */
 }
+
 
